@@ -30,7 +30,7 @@ RUN colcon \
     build \
     --symlink-install \
     --mixin build-testing-on release \
-    --cmake-args --no-warn-unused-cli \
+    --cmake-args --no-warn-unused-cli
 
 ARG RUN_TESTS
 ARG FAIL_ON_TEST_FAILURE
