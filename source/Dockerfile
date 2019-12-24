@@ -1,6 +1,6 @@
-# ARG FROM_IMAGE=
-# FROM $FROM_IMAGE
-FROM osrf/ros2:devel
+ARG FROM_IMAGE=osrf/ros2:devel
+FROM $FROM_IMAGE
+
 # install packages
 RUN apt-get update && apt-get install -q -y \
     libasio-dev \
